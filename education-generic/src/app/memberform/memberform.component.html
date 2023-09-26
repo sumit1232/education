@@ -1,11 +1,24 @@
-<p>memberform works!</p>
-<mat-grid-list cols="4" rowHeight="100px">
-    <mat-grid-tile
-        *ngFor="let tile of tiles"
-        [colspan]="tile.cols"
-        [rowspan]="tile.rows"
-        [style.background]="tile.color">
-      {{tile.text}}
-    </mat-grid-tile>
-  </mat-grid-list>
+
+<div>
+<mat-grid-list cols="4" rowHeight="8:1">
+  <mat-grid-tile>1</mat-grid-tile>
+  <mat-grid-tile>2</mat-grid-tile>
+  <mat-grid-tile>3</mat-grid-tile>
+</mat-grid-list>
+</div>
+
   
+    <div class="example-button-row">
+      <button mat-raised-button color="primary" (click)="onAction()" >Add member</button>
+    </div>
+ <form>
+<ng-container *ngIf="memberform">
+  <div>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, ducimus repellat minima quaerat doloremque excepturi voluptatem quis
+     laborum in? Aspernatur impedit hic cum molestiae blanditiis. Eligendi amet suscipit fugit dolorem?</p>
+  </div>
+  <div class="example-button-row">
+    <button mat-raised-button color="Accent" (click)="closeDialog()">Close</button>
+  </div>
+</ng-container>
+</form>
