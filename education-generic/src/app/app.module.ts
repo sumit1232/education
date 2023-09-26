@@ -7,11 +7,33 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
+import { HomapageComponent } from './homapage/homapage.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {MatInputModule} from '@angular/material/input';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { AssetsComponent } from './assets/assets.component';
+import { RegistrationComponent } from './registration/registration.component';
 // import {MatButtonModule} from '@angular/material/button';
+import {NgIf} from '@angular/common';
+import {FormsModule} from '@angular/forms';
+import {FormControl}from '@angular/forms';
+import {FormGroupDirective}from '@angular/forms';
+import {NgForm}from '@angular/forms';
+import {Validators}from '@angular/forms';
+import {ReactiveFormsModule}from '@angular/forms';
+import {ErrorStateMatcher} from '@angular/material/core';
+import {FormGroup } from '@angular/forms';
+import { MemberformComponent } from './memberform/memberform.component'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomapageComponent,
+    AssetsComponent,
+    RegistrationComponent,
+    MemberformComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +41,13 @@ import {MatDividerModule} from '@angular/material/divider';
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
-    MatDividerModule
+    MatDividerModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatAutocompleteModule,
+    MatInputModule,
+    MatGridListModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
