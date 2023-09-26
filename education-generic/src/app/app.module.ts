@@ -25,7 +25,8 @@ import {Validators}from '@angular/forms';
 import {ReactiveFormsModule}from '@angular/forms';
 import {ErrorStateMatcher} from '@angular/material/core';
 import {FormGroup } from '@angular/forms';
-import { MemberformComponent } from './memberform/memberform.component'
+import { MemberformComponent } from './memberform/memberform.component';
+import { SignupComponent } from './signup/signup.component'
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { MemberformComponent } from './memberform/memberform.component'
     HomapageComponent,
     AssetsComponent,
     RegistrationComponent,
-    MemberformComponent
+    MemberformComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
