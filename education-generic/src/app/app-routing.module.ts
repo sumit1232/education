@@ -5,6 +5,7 @@ import { AssetsComponent } from './assets/assets.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { MemberformComponent } from './memberform/memberform.component';
 import { SignupComponent } from './signup/signup.component';
+import { TodolistComponent } from './todolist/todolist.component';
 
 const routes: Routes = [
   {path: 'home',component: HomapageComponent },
@@ -12,6 +13,8 @@ const routes: Routes = [
   {path: 'registration',component: RegistrationComponent },
   {path: 'member',component:  MemberformComponent},
   {path: 'createacc',component:  SignupComponent},
+  {path: 'todolist',component:  TodolistComponent},
+
 ];
 
 

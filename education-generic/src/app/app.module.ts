@@ -26,7 +26,8 @@ import {ReactiveFormsModule}from '@angular/forms';
 import {ErrorStateMatcher} from '@angular/material/core';
 import {FormGroup } from '@angular/forms';
 import { MemberformComponent } from './memberform/memberform.component';
-import { SignupComponent } from './signup/signup.component'
+import { SignupComponent } from './signup/signup.component';
+import { TodolistComponent } from './todolist/todolist.component'
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { SignupComponent } from './signup/signup.component'
     AssetsComponent,
     RegistrationComponent,
     MemberformComponent,
-    SignupComponent
+    SignupComponent,
+    TodolistComponent
   ],
   imports: [
     BrowserModule,
