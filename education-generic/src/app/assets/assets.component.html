@@ -1,21 +1,18 @@
-<p>assets works!</p>
-<div class="login-box">
-    <h2>Login</h2>
-    <form>
-      <div class="user-box">
-        <input type="text" name="" required="">
-        <label>Username</label>
-      </div>
-      <div class="user-box">
-        <input type="password" name="" required="">
-        <label>Password</label>
-      </div>
-      <a href="#">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        Submit
-      </a>
-    </form>
-  </div>
+<h1>{{title}}</h1>
+<form #basicform="ngForm" (ngSubmit)="getData(basicform.value)">
+  <input type="text" ngModel name="user" placeholder="firstname" />
+<br><br>
+  <input type="text" ngModel name="email" placeholder="Email id" />
+  <br><br>
+  <input type="text" ngModel name="assets" placeholder="Add Assets" />
+<button>Register</button>
+
+</form>
+
+
+<h1>
+  <p>{{Userdata.user}}</p>
+  <p>{{Userdata.email}}</p>
+  <p>{{Userdata.assets}}</p>
+
+</h1>

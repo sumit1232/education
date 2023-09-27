@@ -49,7 +49,7 @@ import { SignupComponent } from './signup/signup.component'
     MatAutocompleteModule,
     MatInputModule,
     MatGridListModule,
-   
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
