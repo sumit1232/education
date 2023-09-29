@@ -6,6 +6,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import { MemberformComponent } from './memberform/memberform.component';
 import { SignupComponent } from './signup/signup.component';
 import { TodolistComponent } from './todolist/todolist.component';
+import { PostApiComponent } from './post-api/post-api.component';
 
 const routes: Routes = [
   {path: 'home',component: HomapageComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'member',component:  MemberformComponent},
   {path: 'createacc',component:  SignupComponent},
   {path: 'todolist',component:  TodolistComponent},
+  {path: 'postapi',component:  PostApiComponent},
 
 ];
 

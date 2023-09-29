@@ -27,7 +27,9 @@ import {ErrorStateMatcher} from '@angular/material/core';
 import {FormGroup } from '@angular/forms';
 import { MemberformComponent } from './memberform/memberform.component';
 import { SignupComponent } from './signup/signup.component';
-import { TodolistComponent } from './todolist/todolist.component'
+import { TodolistComponent } from './todolist/todolist.component';
+import { PostApiComponent } from './post-api/post-api.component';
+import { TestComponent } from './test/test.component'
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { TodolistComponent } from './todolist/todolist.component'
     RegistrationComponent,
     MemberformComponent,
     SignupComponent,
-    TodolistComponent
+    TodolistComponent,
+    PostApiComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
