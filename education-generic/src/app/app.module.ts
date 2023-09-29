@@ -15,6 +15,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { AssetsComponent } from './assets/assets.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { HttpClientModule } from '@angular/common/http';
 // import {MatButtonModule} from '@angular/material/button';
 import {NgIf} from '@angular/common';
 import {FormsModule} from '@angular/forms';
@@ -55,7 +56,8 @@ import { TestComponent } from './test/test.component'
     MatAutocompleteModule,
     MatInputModule,
     MatGridListModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
