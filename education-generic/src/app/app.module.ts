@@ -31,7 +31,8 @@ import { SignupComponent } from './signup/signup.component';
 import { TodolistComponent } from './todolist/todolist.component';
 import { PostApiComponent } from './post-api/post-api.component';
 import { TestComponent } from './test/test.component'
-
+import {MatCardModule} from '@angular/material/card';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,7 +58,9 @@ import { TestComponent } from './test/test.component'
     MatInputModule,
     MatGridListModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule,
+    MatDatepickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
