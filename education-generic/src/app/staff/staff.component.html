@@ -1,0 +1,48 @@
+<p>staff works!</p>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<body>
+  <div class="wrapper">
+    <h2>Create Profile</h2>
+    <form #userForm="ngForm" (ngSubmit)="getUserData(userForm.value)">
+      <div class="input-box">
+        <input type="text" ngModel name="name" placeholder="Enter Name">
+      </div>
+      <div class="input-box">
+        <input type="text" ngModel name="email" placeholder="Enter email">
+      </div>
+      <div class="input-box">
+        <input type="text" ngModel name="number" placeholder="Enter number">
+      </div>
+      <div class="input-box">
+        <input type="text" ngModel name="address" placeholder="Enter address">
+      </div>
+      <div class="input-box">
+        <input type="text" ngModel name="message" placeholder="Enter Message">
+      </div>
+      <div class="input-box button">
+        <input type="Submit" value="Submit" (click)="create()">
+      </div>
+
+ 
+    </form>
+  </div>
+
+</body>
+</html>
+
+
+<div class="main">
+    <ul class="cards">
+      <hr>
+      <div class="card_text" *ngFor="let user of users">
+        <p>Name: {{user.name}} <br></p>
+        <p>Number: {{user.number}}<br></p>
+        <p>Email: {{user.email}}<br></p>
+        <p>Address: {{user.address}}<br></p>
+        <p>Message: {{user.message}}<br></p>
+        <br>
+        <hr>
+      </div>
+    </ul>
+  </div>

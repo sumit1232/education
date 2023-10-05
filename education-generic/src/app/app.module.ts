@@ -33,6 +33,15 @@ import { PostApiComponent } from './post-api/post-api.component';
 import { TestComponent } from './test/test.component'
 import {MatCardModule} from '@angular/material/card';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatMenuModule} from '@angular/material/menu';
+import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatRadioModule} from '@angular/material/radio';
+import { StaffComponent } from './staff/staff.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +52,10 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     SignupComponent,
     TodolistComponent,
     PostApiComponent,
-    TestComponent
+    TestComponent,
+    LoginComponent,
+    DashboardComponent,
+    StaffComponent
   ],
   imports: [
     BrowserModule,
@@ -60,7 +72,12 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     FormsModule,
     HttpClientModule,
     MatCardModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatMenuModule,
+    MatButtonToggleModule,
+    MatExpansionModule,
+    MatSidenavModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]

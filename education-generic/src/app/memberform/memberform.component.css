@@ -1,39 +1,35 @@
-mat-grid-tile {
-    background: lightblue;
-  }
-  card-mat-grid {
-    background: rgb(16, 164, 21);
-  }
-  
-  section {
-    display: table;
-  }
-  
-  .example-label {
-    display: table-cell;
-    font-size: 14px;
-    margin-left: 8px;
-    min-width: 120px;
-  }
-  
-  .example-button-row {
-    display: table-cell;
-    max-width: 600px;
-  }
-  
-  .example-button-row .mat-mdc-button-base {
-    margin: 8px 8px 8px 0;
-  }
-  
-  .example-flex-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .example-button-container {
-    display: flex;
-    justify-content: center;
-    width: 120px;
-  }
-  
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+mat-card{
+  align-items: center;
+  width: 55%;
+height: 300px;
+}
