@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
+// import { PageLengths } from '../../members/data';
+import { Router } from '@angular/router';
+import { StaffService } from '../services/staff.service';
 import { UsersDataService } from '../services/users-data.service'
 @Component({
   selector: 'app-test',
@@ -6,18 +10,20 @@ import { UsersDataService } from '../services/users-data.service'
   styleUrls: ['./test.component.css']
 })
 export class TestComponent {
-  users: any;
-  constructor(private userData: UsersDataService) {
-    userData.users().subscribe((data) => {
-      console.log("data", data);
-      this.users = data
-    });
-  
+  showSendButton: boolean = true;
+  showcard: boolean = true;
+
+  sendNotification(){
+    this.showSendButton = true;
+    this.showcard = true;
   }
-  getUserFromData(data: any) {
-    console.log(data);
-this.userData.saveusers(data).subscribe((result)=>{
-  console.log(result)
-})
+  closeDialog(event: string){
+    if (event === 'cancel') {
+      this.showcard = false
+      // this.shiftWisePopup = false;
+    }
+  }
+  marAttendance(){
+    
   }
 }

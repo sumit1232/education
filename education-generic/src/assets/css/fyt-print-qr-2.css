@@ -1,0 +1,80 @@
+.qr-wrapper {
+    text-align: center;
+    border: 1px solid #f68406;
+    /* padding: 15px 10px; */
+    height: 49%;
+    /* vertical-align: middle; */
+}
+
+.mtt-35 {
+    margin-top: 35px !important;
+}
+
+.col-qr {
+    float: left;
+    width: 100%;
+    padding: 5px;
+}
+
+.branch_name {
+    font-size: 16px;
+    margin-top: 2px;
+}
+
+.centre_logo {
+    width: 90px;
+    height: auto;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.footer-web {
+    font-size: 11px;
+    font-weight: normal;
+    color: #de6509;
+}
+
+.centre_logo img {
+    width: 70%;
+}
+
+hr {
+    width: 50%;
+    border-top: 1px solid #f68509 !important;
+}
+
+.branch_qr {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+}
+
+.branch_qr img {
+    width: 100%;
+}
+
+.powered_by {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 3px;
+    text-align: center;
+}
+
+.powered_by p {
+    margin-bottom: 5px;
+}
+
+.fyt_logo {
+    width: 220px;
+    height: auto;
+    margin: 0 auto;
+    /* padding-bottom: 15px; */
+}
+
+.branch_details_qr h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 3px;
+    text-transform: uppercase;
+}

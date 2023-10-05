@@ -1,0 +1,249 @@
+@media print {
+
+article {
+    width:100%!important;
+    padding:0!important;
+    margin:0!important;
+}
+
+@page:first {
+    margin: 0cm;
+}
+@page:last {
+    margin: 0cm;
+}
+@page:left {
+    margin: 0cm 0cm 0cm 0cm;
+}
+@page:right {
+    margin: 0cm 0cm 0cm 0cm;
+}
+
+/* .invoice-wrapper {
+    border: 3px solid #e2e2e2;
+} */
+
+.col-qr {
+    float: left;
+    width: 100%;
+    padding: 5px;
+}
+
+.branch_name {
+    font-size: 16px;
+}
+
+.centre_logo {
+    width: 90px;
+    height: auto;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.ta-c{
+    text-align: center;
+}
+
+.centre_logo img {
+    width: 70%;
+}
+
+
+.branch_qr {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+}
+
+.branch_qr img {
+    width: 100%;
+}
+
+.powered_by {
+    float: right;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 30px;
+}
+
+.powered_by p {
+    margin-bottom: 5px;
+}
+
+.fyt_logo {
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+
+.branch_details_qr h3 {
+    font-size: 5px;
+    font-weight: 600;
+    margin-bottom: 0;
+    border-bottom: 1px solid gray !important;
+}
+
+
+hr {
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0);
+}
+
+.hr-gray{
+    width: 100%;
+    height: 1px;
+    float: left;
+}
+
+.hr-100-width{
+    width: 100%;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    float: left;
+}
+
+.left-side-1{
+    float: left;
+    width: 60%;
+    padding-top: 30px !important;
+    padding: 5px;
+}
+
+.right-side-1{
+    float: left;
+    width: 30%;
+    padding-top: 30px !important;
+    padding: 5px;
+}
+
+
+.left-side-2{
+    float: left;
+    width: 60%;
+    padding-top: 30px !important;
+    padding: 5px;
+}
+
+.right-side-2{
+    float: left;
+    width: 30%;
+    padding-top: 30px !important;
+    padding: 5px;
+}
+
+.left-side-3{
+    float: left;
+    width: 80%;
+}
+
+.right-side-3{
+    float: right ;
+    width: 20%;
+}
+
+.des{
+    width: 22%;
+    float: left;
+    padding-left: 1px;
+}
+
+.p-cost{
+    width: 17%;
+    float: left;
+    padding-left: 2px;
+}
+
+.dis{
+    width: 14%;
+    float: left;
+    padding-left: 2px;
+}
+
+.t-amount{
+    width: 17%;
+    float: left;
+    padding-left: 2px;
+}
+
+.tx{
+    width: 10%;
+    float: left;
+    padding-left: 2px;
+}
+.n-amount{
+    width: 17%;
+    float: left;
+    padding-left: 2px;
+}
+
+/* receipt no */
+.receipt-no{
+    width: 22%;
+    float: left;
+    padding-left: 2px;
+}
+
+.pay-date{
+    width: 14%;
+    float: left;
+    padding-left: 2px;
+}
+
+.pay-mode{
+    width: 14%;
+    float: left;
+    padding-left: 2px;
+}
+
+.cheque{
+    width: 20%;
+    float: left;
+    padding-left: 2px;
+}
+
+.bank-name{
+    width: 14%;
+    float: left;
+    padding-left: 2px;
+}
+.paid-amount{
+    width: 12%;
+    float: left;
+    padding-left: 2px;
+}
+
+
+
+
+/*  */
+.amount-word{
+    width: 100%;
+    float: left;
+    padding-left: 2px;
+}
+
+.border-btm{
+    border-bottom: 2px solid gray;
+    width: 100%;
+}
+.border-top{
+    border-bottom: 1px solid gray;
+    width: 100%;
+    position: fixed !important;
+}
+
+.ta-c{
+    text-align: center !important;
+}
+
+}
+
+
+.fyt-heading-h {
+    text-transform: uppercase;
+}

@@ -1,0 +1,40 @@
+/* to do responsive styles here */
+
+@media screen and (max-width:768px) {
+    .study-custom-modal-design,
+    .study-search-box-cont {
+        min-width: 100%;
+        max-width: 100%;
+        right: .1rem;
+        left: .1rem;
+    }
+    .study-search-box {
+        max-width: 130px;
+    }
+    .study-label-filter {
+        font-size: 12px;
+    }
+    .brand-title {
+        font-size: 15px;
+    }
+    .branch-title {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .study-btn-container>button {
+        margin: 0 4px;
+        font-size: 10px;
+        padding: 0 10px;
+    }
+    .study-dash {
+        max-width: 36px !important;
+        min-width: 35px !important;
+    }
+    /* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+    @media (min-width: 481px) and (max-width: 767px) {}
+}

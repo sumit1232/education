@@ -1,0 +1,126 @@
+.study-link-btn {
+    cursor: pointer !important;
+}
+.study-login-btn {
+    /* position: absolute; */
+    width: 160px;
+    height: 38px;
+    border: 1px solid #2F80ED;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    font-family: Roboto-Regular;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.0357143em;
+    color: #2F80ED;
+}
+.study-login-title {
+    font-family: Roboto-Regular;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: 0.0357143em;
+    color: #0748A6;
+}
+.pngColor {
+    -webkit-filter: opacity(.5) drop-shadow(0 0 0 blue) !important;
+    filter: opacity(.5) drop-shadow(0 0 0 blue) !important;
+}
+.web-study-subtitle {
+    margin: 0 !important;
+    font-family: "Montserrat-Regular";
+    font-size: 20px;
+    color: #1A1A1A;
+}
+.study-desc {
+    font-family: Roboto-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    /* line-height: 28px; */
+    letter-spacing: 0.0357143em;
+    color: #333333;
+}
+.study-parent-img {
+    float: right;
+    width: 350px;
+}
+.study-background-third {
+    background-color: #F2F2F2;
+}
+.study-admission-process {
+    font-family: Roboto-Regular;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 56px;
+    letter-spacing: 0.0357143em;
+    color: #828282;
+}
+.study-copyright {
+    font-family: Roboto-Regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.0357143em;
+    color: #828282;
+}
+.home-banner {
+    /* background-image: url('../images/home/home_banner.jpg') !important; */
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+
+
+.pl-0 {
+    padding-left: 0 !important;
+}
+.pl-40 {
+    padding-left: 40px !important;
+}
+.pngWhite {
+    -webkit-filter: opacity(.5) drop-shadow(0 0 0 white) !important;
+    filter: opacity(.5) drop-shadow(0 0 0 white) !important;
+}
+
+.study-reg-btn {
+    /* position: absolute; */
+    width: 160px;
+    height: 38px;
+    background: linear-gradient(0deg, #6FCF97, #6FCF97);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    border: none;
+    font-family: Roboto-Regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.0357143em;
+    color: #FFFFFF;
+}
+.study-black-title {
+    font-family: Roboto-Regular;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 75px;
+    letter-spacing: 0.0357143em;
+    color: #333333;
+}
+
+.study-background-second {
+    background-color: #fff;
+}
+.pt-60 {
+    padding-top: 60px !important;
+}
+

@@ -1,0 +1,48 @@
+
+
+.heading {
+    font-size: 25px;
+    font-weight: bolder;
+  }
+  
+  .text-bold {
+    font-weight: bold;
+  }
+  
+  .text-right {
+    float: right;
+  }
+  
+  .bg-grey {
+    background-color: grey;
+  }
+  
+  
+  .salary-slip {
+    margin: 15px;
+  
+  }
+  .mr-10{
+    margin-right: 10px !important;
+  }
+  .empDetail {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  
+  .companyName {
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  
+  th,
+  td {
+    padding-left: 6px;
+    border-collapse: collapse;
+    text-align: left;
+  }
+  

@@ -7,3 +7,19 @@
     background-size: cover;
   }
   
+  .fyt-modal-design-branch {
+    min-width: 35%;
+    max-width: 40%;
+    position: fixed;
+    z-index: 1;
+    bottom: 15rem;
+    right: 30%;
+    max-height: 50%;
+    min-height: 200px;
+    border: 1px solid #ccc;
+    margin-right: 1rem;
+    box-shadow: 0 3px 5px 5px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
+    background: #fff;
+    padding: .5rem;
+    border-radius: 3px;
+}

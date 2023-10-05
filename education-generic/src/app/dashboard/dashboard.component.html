@@ -1,17 +1,69 @@
 <mat-drawer-container class="example-container" autosize>
-    <mat-drawer #drawer class="example-sidenav" mode="side">
-      <p>Auto-resizing sidenav</p>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <div>
+      <p>Sidenav</p>
       <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+
       <button (click)="showFiller = !showFiller" mat-raised-button>
-        Toggle extra text
+        Today's Update
       </button>
-    </mat-drawer>
+    </div><br>
+
+    <div>
+      <button mat-raised-button [routerLink]="['/dashboard']">
+        Dashboard
+      </button>
+    </div><br>
+    <div>
+      <button mat-raised-button [routerLink]="['/enquiry']">
+        enquiry
+      </button>
+    </div><br>
+    <div>
+      <button mat-raised-button [routerLink]="['/assets']">
+        Assets
+      </button>
+    </div><br>
+    <div>
+      <button mat-raised-button [routerLink]="['/staff']">
+        Staff
+      </button>
+    </div><br>
+    <div>
+      <button mat-raised-button [routerLink]="['/member']">
+        Member
+      </button>
+    </div><br>
   
-    <div class="example-sidenav-content">
-      <button type="button" mat-button (click)="drawer.toggle()">
-        Toggle sidenav
-      </button>
+
+    
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <button type="button" mat-button (click)="drawer.toggle()">
+      Toggle sidenav
+    </button>
+    <div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptatibus veritatis iusto nostrum sunt
+        ducimus excepturi commodi velit quam. Eum unde temporibus nisi cum sapiente nesciunt eius quidem minus totam!
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe libero deserunt consequatur, laboriosam earum
+        architecto sit nihil assumenda magni
+        tempore blanditiis voluptatem, molestiae fuga est labore provident quidem placeat temporibus?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nihil, nam nulla sunt quos ipsam enim ipsum libero
+        ratione, fuga vel harum
+        illum maxime porro itaque sint, quia quisquam laborum.</p>
     </div>
-  
-  </mat-drawer-container>
-  
+    <mat-grid-list cols="3" rowHeight="2:1">
+      <mat-grid-tile>1</mat-grid-tile>
+      <mat-grid-tile>2</mat-grid-tile>
+      <mat-grid-tile>3</mat-grid-tile>
+      <mat-grid-tile>1</mat-grid-tile>
+      <mat-grid-tile>2</mat-grid-tile>
+      <mat-grid-tile>3</mat-grid-tile>  
+      
+    </mat-grid-list>
+
+    <app-footer></app-footer>
+  </div>
+</mat-drawer-container>

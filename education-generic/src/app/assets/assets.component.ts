@@ -22,4 +22,16 @@ addassets(){
 closeDialog() {
   this.addassetsflag = false;
 }
+subtitle = "Add New Assets";
+  list: any[] = [];
+  addtask(item: string) {
+    // console.log(item);
+    this.list.push({ id: this.list.length, name: item });
+    console.log(this.list);
+  }
+
+  removetask(id: number) {
+    console.log(id);
+    this.list = this.list.filter(item => item.id !== id)
+  }
 }

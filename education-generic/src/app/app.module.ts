@@ -41,6 +41,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatRadioModule} from '@angular/material/radio';
 import { StaffComponent } from './staff/staff.component';
+import { FooterComponent } from './footer/footer.component';
+import { EnquryComponent } from './enqury/enqury.component';
+
 
 @NgModule({
   declarations: [
@@ -55,7 +58,9 @@ import { StaffComponent } from './staff/staff.component';
     TestComponent,
     LoginComponent,
     DashboardComponent,
-    StaffComponent
+    StaffComponent,
+    FooterComponent,
+    EnquryComponent
   ],
   imports: [
     BrowserModule,

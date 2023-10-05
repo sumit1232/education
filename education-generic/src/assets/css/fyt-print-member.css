@@ -1,0 +1,44 @@
+.table-spacing {
+    margin: 15px;
+  }
+  
+  .table-logo{
+    text-align: right;
+  }
+  
+  .table-headingcenter {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .table-employeedetails {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  
+  .table-elementspacing {
+    padding: 5px;
+  }
+  
+  .th {
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  th,
+  td {
+    padding-left: 6px;
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+  }
+  
+  .tnc-heading{
+    font-size: 15px;
+  }
+  
+  .tnc-text{
+    font-size: 13px;
+  }

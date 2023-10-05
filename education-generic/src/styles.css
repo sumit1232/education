@@ -2,3 +2,121 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* fonts for tests and material icons */
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Source+Sans+Pro:300,400,500,600,700,300italic,400italic,600italic');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+/* @import url("assets/css/fyt-font.css"); */
+/* @import url("../node_modules/angular-notifier/styles/core.css"); */
+/* @import url("../node_modules/angular-notifier/styles.css"); */
+
+
+/* Bootstrap and Font Awesome */
+/* @import url("../node_modules/font-awesome/css/font-awesome.min.css"); */
+/* @import url("../node_modules/bootstrap/dist/css/bootstrap.min.css"); */
+
+/* for animations */
+@import url("assets/css/fyt-animations.css");
+
+/* custom Styles */
+@import url("assets/css/fyt-custom-global.css");
+
+/* style css */
+@import url("assets/css/fyt-style.css");
+
+/* responsive styles */
+@import url("assets/css/fyt-responsive.css");
+
+
+/* use for internal form css */
+@import url("assets/css/study-homepage.css");
+
+
+
+.loader1{
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    bottom: 0px;
+   
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    text-align: center;
+    z-index:1000000;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* Loader */
+
+.backdrop {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 9999;
+  display: table-cell;
+  height: 100vh;
+}
+
+.spinner {
+  height: 60px;
+  display: block;
+  vertical-align: middle;
+  margin: 46vh auto;
+  text-align: center;
+  font-size: 10px;
+}
+
+  .spinner > div {
+      width: 18px;
+      height: 18px;
+      background-color: #333;
+      border-radius: 100%;
+      display: inline-block;
+      -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+      animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  }
+
+#loader_msg {
+  font-size: 14px;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+      -webkit-transform: scale(0);
+      background-color: rgba(4,60,111, 1);
+  }
+
+  40% {
+      -webkit-transform: scale(1.0);
+      background-color: rgba(4,60,111, 1);
+  }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      background-color: rgba(4,60,111, 1);
+  }
+
+  40% {
+      -webkit-transform: scale(1.0);
+      transform: scale(1.0);
+      background-color: rgba(4,60,111, 1);
+  }
+}
+ 
