@@ -1,5 +1,115 @@
+<p>Home works!</p>
 
-  <div class="fyt-modal-design-branch">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere illo, voluptates dolorum enim, quibusdam beatae consequatur expedita magnam aliquid eius 
-      voluptatibus neque quis ut accusantium earum, quae nulla eos aperiam.</p>
-    </div>    
+<div class="row mb-10">
+    <div class="col-md-12">
+        <ng-container *ngIf="showSendButton">
+            <button mat-raised-button class="fyt-button mr-5 mt-5" (click)="sendNotification()">
+                Send Notification
+            </button>
+        </ng-container>
+    </div>
+</div>
+<ng-container *ngIf="showcard">
+    <div class="fyt-modal-design-branch animated slideInUp slow row" style="z-index: 3;">
+        <div class="col-md-12 fyt-display-flex">
+            <span class="sp">
+            </span>
+            <span class="new-Montserrat-Medium fyt-link-btn new-999999" (click)="closeDialog('cancel')"> <span
+                    style="border-bottom: 1px solid #999999;">Close &nbsp;x</span>
+            </span>
+        </div>
+        <div class="col-md-12 ta-c" style="border-bottom: 1px solid #999999;">
+            <h6 class="ta-c new-Montserrat-Regular fnt-15 new-333333">Home Page</h6>
+            <span class="fnt-15 new-Montserrat-Regular new-808080 ta-c">Add Your Information</span>
+
+
+            <form class="example-form">
+                <table class="example-full-width" cellspacing="0">
+                    <tr>
+                        <td><mat-form-field class="example-full-width">
+                                <mat-label>First name</mat-label>
+                                <input matInput>
+                            </mat-form-field></td>
+                        <td><mat-form-field class="example-full-width">
+                                <mat-label>Last Name:</mat-label>
+                                <input matInput>
+                            </mat-form-field></td>
+                    </tr>
+                    <tr>
+                            <td><mat-form-field class="example-full-width">
+                                <mat-label>Age</mat-label>
+                                <input matInput>
+                            </mat-form-field></td>
+                        <td><mat-form-field class="example-full-width">
+                                <mat-label>City</mat-label>
+                                <input matInput>
+                            </mat-form-field></td>
+                    </tr>
+                </table>
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Enter Your Mobile Number:</mat-label>
+                    <span matPrefix>+91 &nbsp;</span>
+                    <input type="tel" matInput placeholder="1234-1234-1234">
+                    <mat-icon matSuffix>mode_edit</mat-icon>
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Address</mat-label>
+                    <textarea matInput placeholder="Enter Your Address"></textarea>
+                </mat-form-field>
+            </form>
+
+
+            <h6 class="ta-c new-Montserrat-Medium fnt-15 new-0071BC pt-10">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores nostrum, quod facere hic
+                    perspiciatis omnis quaerat odit, harum expedita consectetur enim fugiat, itaque maxime at maiores
+                    libero tenetur necessitatibus eaque!</p>
+            </h6>
+        </div>
+        <br>
+        <div style="text-align: center;">
+            <button type="button" class="new-Montserrat-Medium yes-btn" style="text-align: center;"
+                (click)="marAttendance()"><img src="../../../../assets/icons/member_profile/yes.png" width="22px"
+                    style="margin-top: -2px;" alt="">Yes</button>&nbsp;&nbsp;&nbsp;
+            <button type="button" class="new-Montserrat-Medium no-btn" style="text-align: center;"
+                (click)="closeDialog('cancel')"><img src="../../../../assets/icons/member_profile/no.png" width="22px"
+                    style="margin-top: -2px;" alt="">No</button>
+        </div>
+
+        <!-- <div class="col-md-6 col-6 py-3 pb-20" style="text-align: end;">
+            <button type="button" class="new-Montserrat-Medium yes-btn" style="text-align: initial;"
+                (click)="marAttendance()"><img src="../../../../assets/icons/member_profile/yes.png" width="22px"
+                    style="margin-top: -2px;" alt="">&nbsp;Yes</button>
+        </div>
+        <div class="col-md-6 col-6 py-3 pb-20" style="text-align: initial;">
+            <button type="button" class="new-Montserrat-Medium no-btn" style="text-align: initial;"
+                (click)="closeDialog('cancel')"><img src="../../../../assets/icons/member_profile/no.png" width="22px"
+                    style="margin-top: -2px;" alt="">&nbsp;No</button>
+        </div> -->
+    </div>
+</ng-container>
+
+<ng-container *ngIf="submitedform">
+<mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Shiba Inu</mat-card-title>
+      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba1.jpg" alt="Photo of a Shiba Inu" style="display:inline; height: 250px;">
+    <mat-card-content>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque animi excepturi ipsum voluptatem doloribus eaque, ex,
+         nulla tenetur quidem, recusandae a similique incidunt ut perferendis consequuntur adipisci doloremque iure quis?
+        Thank You For Submit Your Information
+      </p>
+    </mat-card-content>
+
+
+    <mat-card-actions>
+        <button mat-raised-button>Download PDF</button> &nbsp;&nbsp;
+        <button mat-raised-button>Cancel</button>
+    </mat-card-actions>
+  </mat-card>
+</ng-container>

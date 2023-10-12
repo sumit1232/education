@@ -14,7 +14,11 @@ import {ErrorStateMatcher} from '@angular/material/core';
 import {FormGroup } from '@angular/forms'
 // import {FormControl, FormGroupDirective, NgForm, Validators} from '@angular/forms';
 // import {ErrorStateMatcher} from '@angular/material/core';
-
+import { MatSnackBar } from '@angular/material/snack-bar';
+// import { PageLengths } from '../../members/data';
+import { Router } from '@angular/router';
+import { StaffService } from '../services/staff.service';
+import { UsersDataService } from '../services/users-data.service'
 
 @Component({
   selector: 'app-homapage',
@@ -23,14 +27,26 @@ import {FormGroup } from '@angular/forms'
   
 })
 export class HomapageComponent {
-  memberform: boolean = false;
- 
-  onAction() {
-    this.memberform = true;
-    console.log("Done");
+  value = 'Clear me';
+  showSendButton: boolean = true;
+  showcard: boolean = true;
+  submitedform: boolean = false;
+
+  
+
+  sendNotification(){
+    this.showSendButton = true;
+    this.showcard = true;
   }
-  closeDialog() {
-    this.memberform = false;
+  closeDialog(event: string){
+    if (event === 'cancel') {
+      this.showcard = false
+      // this.shiftWisePopup = false;
+    }
+  }
+  marAttendance(){
+   this.submitedform = true
+      this.showcard = false
   }
 
 }
