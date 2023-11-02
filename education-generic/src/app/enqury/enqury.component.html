@@ -1,16 +1,23 @@
-<p>enqury works!</p>
-
 <div class="row mb-10">
     <div class="col-md-12">
         <ng-container *ngIf="showSendButton">
             <button mat-raised-button class="fyt-button mr-5 mt-5" (click)="sendNotification()">
+                Thank you card Enquiry
+            </button>
+        </ng-container>
+    </div>
+    <div class="col-md-12">
+        <ng-container *ngIf="showSendButton">
+            <button mat-raised-button class="fyt-button mr-5 mt-5" (click)="openenquryform()">
                 Add Enquiry
             </button>
         </ng-container>
     </div>
 </div>
+
+<!-- Thank You card  -->
 <ng-container *ngIf="showcard">
-    <div class="fyt-modal-design-branch animated slideInUp slow row" style="z-index: 3;">
+    <div class="fyt-modal-design-branch-thankyou animated slideInUp slow row" style="z-index: 3;">
         <div class="col-md-12 fyt-display-flex">
             <span class="sp">
             </span>
@@ -19,8 +26,8 @@
             </span>
         </div>
         <div class="col-md-12 ta-c" style="border-bottom: 1px solid #999999;">
-            <h6 class="ta-c new-Montserrat-Regular fnt-15 new-333333">Enquirys</h6>
-            <span class="fnt-15 new-Montserrat-Regular new-808080 ta-c">Are You Sure To add Enquiry</span>
+            <h6 class="ta-c new-Montserrat-Regular fnt-15 new-333333">Enquiry :</h6>
+            <span class="fnt-15 new-Montserrat-Regular new-808080 ta-c">Your Enquiry Has been submited.</span>
             <h6 class="ta-c new-Montserrat-Medium fnt-15 new-0071BC pt-10">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores nostrum, quod facere hic
                     perspiciatis omnis quaerat odit, harum expedita consectetur enim fugiat, itaque maxime at maiores
@@ -30,22 +37,104 @@
         <br>
         <div style="text-align: center;">
             <button type="button" class="new-Montserrat-Medium yes-btn" style="text-align: center;"
-            (click)="marAttendance()"><img src="../../../../assets/icons/member_profile/yes.png" width="22px"
-                style="margin-top: -2px;" alt="">Yes</button>&nbsp;&nbsp;&nbsp;
-            <button type="button" class="new-Montserrat-Medium no-btn" style="text-align: center;"
-            (click)="closeDialog('cancel')"><img src="../../../../assets/icons/member_profile/no.png" width="22px"
-                style="margin-top: -2px;" alt="">No</button>
-        </div>
-
-        <!-- <div class="col-md-6 col-6 py-3 pb-20" style="text-align: end;">
-            <button type="button" class="new-Montserrat-Medium yes-btn" style="text-align: initial;"
                 (click)="marAttendance()"><img src="../../../../assets/icons/member_profile/yes.png" width="22px"
-                    style="margin-top: -2px;" alt="">&nbsp;Yes</button>
-        </div>
-        <div class="col-md-6 col-6 py-3 pb-20" style="text-align: initial;">
-            <button type="button" class="new-Montserrat-Medium no-btn" style="text-align: initial;"
+                    style="margin-top: -2px;" alt="">Yes</button>&nbsp;&nbsp;&nbsp;
+            <button type="button" class="new-Montserrat-Medium no-btn" style="text-align: center;"
                 (click)="closeDialog('cancel')"><img src="../../../../assets/icons/member_profile/no.png" width="22px"
-                    style="margin-top: -2px;" alt="">&nbsp;No</button>
-        </div> -->
+                    style="margin-top: -2px;" alt="">No</button>
+        </div>
     </div>
 </ng-container>
+
+<!-- Details Form  -->
+<ng-container *ngIf="openenquryformflag">
+    <div class="fyt-modal-design-branch animated slideInUp slow row" style="z-index: 3;">
+        <div class="col-md-12 fyt-display-flex">
+            <span class="sp">
+            </span>
+            <span class="new-Montserrat-Medium fyt-link-btn new-999999" (click)="closeDialog('cancel')"> <span
+                    style="border-bottom: 1px solid #999999;">Close &nbsp;x</span>
+            </span>
+        </div>
+        <div class="col-md-12 ta-c" style="border-bottom: 1px solid #999999;">
+            <h3 class="ta-c new-Montserrat-Regular fnt-15 new-333333">Enquiry Form</h3>
+            <span class="fnt-15 new-Montserrat-Regular new-808080 ta-c">Add Your Information</span>
+
+            <form #userForm="ngForm" (ngSubmit)="getUserData(userForm.value)">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Full name:</mat-label>
+                    <input matInput ngModel name="name">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Contact Number:</mat-label>
+                    <input matInput ngModel name="number">
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Email:</mat-label>
+                    <input matInput ngModel name="email">
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Age</mat-label>
+                    <input matInput ngModel name="age">
+                </mat-form-field>
+
+
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>City:</mat-label>
+                    <input matInput ngModel name="city">
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Description:</mat-label>
+                    <input matInput ngModel name="description">
+                </mat-form-field>
+
+                <button class="new-Montserrat-Medium yes-btn" style="text-align: center;">Add</button>
+            </form>
+        </div>
+    </div>
+</ng-container>
+
+
+
+
+<div class="main">
+    <div>
+        <h1>Enquirys:</h1>
+    </div>
+
+    <!-- Sequence  -->
+    <section class="articles">
+
+
+        <div *ngFor="let user of users">
+            <article>
+                <div class="article-wrapper">
+                    <figure>
+                        <img src="https://picsum.photos/id/1011/800/450" alt="" />
+                    </figure>
+                    <div class="article-body">
+                        <h4><b>{{user.name}}</b></h4>
+                        <p>number: {{user.number}}<br></p>
+                        <p>email: {{user.email}}<br></p>
+                        <p>Age: {{user.age}}<br></p>
+                        <p>City: {{user.city}}<br></p>
+                        <p>Description: {{user.description}}<br></p>
+                        <a href="#" class="read-more">
+                            Read more <span class="sr-only">about this is some title</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            
+        </div>
+    </section>

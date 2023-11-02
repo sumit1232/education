@@ -1,69 +1,55 @@
-<mat-drawer-container class="example-container" autosize>
-  <mat-drawer #drawer class="example-sidenav" mode="side">
-    <div>
-      <p>Sidenav</p>
-      <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+<!DOCTYPE html>
+<html lang="en">
 
-      <button (click)="showFiller = !showFiller" mat-raised-button>
-        Today's Update
-      </button>
-    </div><br>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, 
+				initial-scale=1.0">
+  <title>GeeksForGeeks</title>
 
-    <div>
-      <button mat-raised-button [routerLink]="['/dashboard']">
-        Dashboard
-      </button>
-    </div><br>
-    <div>
-      <button mat-raised-button [routerLink]="['/enquiry']">
-        enquiry
-      </button>
-    </div><br>
-    <div>
-      <button mat-raised-button [routerLink]="['/assets']">
-        Assets
-      </button>
-    </div><br>
-    <div>
-      <button mat-raised-button [routerLink]="['/staff']">
-        Staff
-      </button>
-    </div><br>
-    <div>
-      <button mat-raised-button [routerLink]="['/member']">
-        Member
-      </button>
-    </div><br>
-  
+</head>
+
+<body>
+
+  <!-- for header part -->
+  <div class="main-container">
+   
+    <div class="main">
 
     
-  </mat-drawer>
 
-  <div class="example-sidenav-content">
-    <button type="button" mat-button (click)="drawer.toggle()">
-      Toggle sidenav
-    </button>
-    <div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptatibus veritatis iusto nostrum sunt
-        ducimus excepturi commodi velit quam. Eum unde temporibus nisi cum sapiente nesciunt eius quidem minus totam!
-      </p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe libero deserunt consequatur, laboriosam earum
-        architecto sit nihil assumenda magni
-        tempore blanditiis voluptatem, molestiae fuga est labore provident quidem placeat temporibus?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nihil, nam nulla sunt quos ipsam enim ipsum libero
-        ratione, fuga vel harum
-        illum maxime porro itaque sint, quia quisquam laborum.</p>
+    
+  <!-- Big card  -->
+  <div class="report-container">
+    <div class="report-header">
+      <h1 class="recent-Articles">Recent Articles</h1>
+      <button class="view">View All</button>
     </div>
-    <mat-grid-list cols="3" rowHeight="2:1">
-      <mat-grid-tile>1</mat-grid-tile>
-      <mat-grid-tile>2</mat-grid-tile>
-      <mat-grid-tile>3</mat-grid-tile>
-      <mat-grid-tile>1</mat-grid-tile>
-      <mat-grid-tile>2</mat-grid-tile>
-      <mat-grid-tile>3</mat-grid-tile>  
-      
-    </mat-grid-list>
 
-    <app-footer></app-footer>
+    <div class="report-body">
+      <div class="report-topic-heading">
+        <h3 class="t-op">Article</h3>
+        <h3 class="t-op">Views</h3>
+        <h3 class="t-op">Comments</h3>
+        <h3 class="t-op">Status</h3>
+      </div>
+
+      <div class="items">
+        <div class="item1">
+          <h3 class="t-op-nextlvl">Article 73</h3>
+          <h3 class="t-op-nextlvl">2.9k</h3>
+          <h3 class="t-op-nextlvl">210</h3>
+          <h3 class="t-op-nextlvl label-tag">Published</h3>
+        </div>
+      </div>
+    </div>
   </div>
-</mat-drawer-container>
+    
+    </div>
+  </div>
+
+  <!-- <script src="./index.js"></script> -->
+</body>
+
+</html>

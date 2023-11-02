@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { StaffDataService } from '../services/staff-data.service';
 
 @Component({
   selector: 'app-registration',
@@ -6,12 +7,45 @@ import { Component } from '@angular/core';
   styleUrls: ['./registration.component.css']
 })
 export class RegistrationComponent {
-  value : any;
-  tiles = [
-    {text: 'One', cols: 3, rows: 1, color: 'lightblue'},
-    {text: 'Two', cols: 1, rows: 2, color: 'lightgreen'},
-    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
-    {text: 'Four', cols: 2, rows: 1, color: '#DDBDF1'},
-  ];
+  value = 'Clear me';
+  
 
+  
+  showSendButton: boolean = true;
+  showcard: boolean = false;
+  submitedform: boolean = false;
+  users: any;
+  constructor(private userData: StaffDataService) {
+    this.userData.saveUserEnquiry().subscribe((data) => {
+      console.log("data", data);
+      this.users = data;
+    });
+  }
+
+  sendNotification(){
+    this.showSendButton = true;
+    this.showcard = true;
+  }
+  closeDialog(event: string){
+    if (event === 'cancel') {
+      this.showcard = false
+      // this.shiftWisePopup = false;
+    }
+  }
+  marAttendance(){
+   this.submitedform = true
+      this.showcard = false
+  }
+  openenquiryform(){
+    console.log("openenquiryform Open");
+    
+  }
+  
+  getUserData(data: any) {
+    console.log(data);
+    this.userData.saveEnquiry(data).subscribe((result) => {
+      console.log(result);
+
+    })
+  }
 }

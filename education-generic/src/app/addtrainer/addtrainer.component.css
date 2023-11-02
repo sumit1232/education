@@ -1,59 +1,59 @@
 .fyt-modal-design-branch {
-  min-width: 75%;
-  max-width: 60%;
-  position: fixed;
-  z-index: 1;
-  top: 5.5rem;
-  right: 10%;
-  max-height: 100%;
-  min-height: 500px;
-  border: 1px solid #ccc;
-  margin-right: 1rem;
-  box-shadow: 0 3px 5px 5px rgb(0 0 0 / 6%), 0 6px 10px 0 rgb(0 0 0 / 7%), 0 1px 18px 0 rgb(0 0 0 / 12%) !important;
-  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
-  background: #fff;
-  padding: .5rem;
-  border-radius: 7px;
-}
+    min-width: 75%;
+    max-width: 60%;
+    position: fixed;
+    z-index: 1;
+    top: 5.5rem;
+    right: 10%;
+    max-height: 100%;
+    min-height: 500px;
+    border: 1px solid #ccc;
+    margin-right: 1rem;
+    box-shadow: 0 3px 5px 5px rgb(0 0 0 / 6%), 0 6px 10px 0 rgb(0 0 0 / 7%), 0 1px 18px 0 rgb(0 0 0 / 12%) !important;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+    background: #fff;
+    padding: .5rem;
+    border-radius: 7px;
+  }
+  
+  .example-form {
+    /* min-width: 30px; */
+    /* max-width: 500px; */
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+  
+  
+  .example-card {
+    min-width: 25%;
+    max-width: 400px;
+    position: fixed;
+    z-index: 1;
+    top: 10rem;
+    right: 40%;
+    max-height: 100%;
+    min-height: 500px;
+    border: 1px solid #872424;
+    margin-right: 1rem;
+    box-shadow: 0 3px 5px 5px rgb(0 0 0 / 6%), 0 6px 10px 0 rgb(0 0 0 / 7%), 0 1px 18px 0 rgb(0 0 0 / 12%) !important;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+    background: #fff;
+    padding: .5rem;
+    border-radius: 7px;
+  }
+  
+  
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
 
-.example-form {
-  /* min-width: 30px; */
-  /* max-width: 500px; */
-  width: 100%;
-}
-
-.example-full-width {
-  width: 100%;
-}
-
-
-
-.example-card {
-  min-width: 25%;
-  max-width: 400px;
-  position: fixed;
-  z-index: 1;
-  top: 10rem;
-  right: 40%;
-  max-height: 100%;
-  min-height: 500px;
-  border: 1px solid #872424;
-  margin-right: 1rem;
-  box-shadow: 0 3px 5px 5px rgb(0 0 0 / 6%), 0 6px 10px 0 rgb(0 0 0 / 7%), 0 1px 18px 0 rgb(0 0 0 / 12%) !important;
-  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
-  background: #fff;
-  padding: .5rem;
-  border-radius: 7px;
-}
-
-
-
-.example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-  background-size: cover;
-}
-
-
+  
 /* ------------------------Enquiry Card Css------------------------------ */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);

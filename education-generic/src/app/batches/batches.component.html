@@ -1,0 +1,188 @@
+<p>batches works!</p>
+<button mat-raised-button color="primary" (click)="opencard()">Add Batch </button><br><br><br>
+
+<ng-container *ngIf="showcard">
+    <div class="fyt-modal-design-branch animated slideInUp slow row" style="z-index: 3;">
+        <div class="col-md-12 fyt-display-flex">
+            <span class="sp">
+            </span>
+            <span class="new-Montserrat-Medium fyt-link-btn new-999999" (click)="closeDialog('cancel')"> <span
+                    style="border-bottom: 1px solid #999999;">Close &nbsp;x</span>
+            </span>
+        </div>
+        <div class="col-md-12 ta-c" style="border-bottom: 1px solid #999999;">
+            <h3 class="ta-c new-Montserrat-Regular fnt-15 new-333333">Addd Your Batch</h3>
+            <span class="fnt-15 new-Montserrat-Regular new-808080 ta-c">Add Your Information</span>
+
+            <form #userForm="ngForm" (ngSubmit)="getUserData(userForm.value)">
+                <table class="example-full-width" cellspacing="0">
+                    <tr>
+                        <td><mat-form-field class="example-full-width">
+                                <mat-label>Batch name</mat-label>
+                                <input matInput ngModel name="batchname">
+                            </mat-form-field></td>
+                        <td><mat-form-field class="example-full-width">
+                                <mat-label>Trainer Name:</mat-label>
+                                <input matInput ngModel name="trainername">
+                            </mat-form-field></td>
+                    </tr>
+                    <tr>
+                        <td><mat-form-field class="example-full-width">
+                                <mat-label>Start Time</mat-label>
+                                <input matInput ngModel name="starttime">
+                            </mat-form-field></td>
+                        <td><mat-form-field class="example-full-width">
+                                <mat-label>End Time</mat-label>
+                                <input matInput ngModel name="endtime">
+                            </mat-form-field></td>
+
+
+                    </tr>
+                    <tr>
+                        <td><mat-form-field class="example-full-width">
+                                <mat-label>Start Date</mat-label>
+                                <input matInput ngModel name="startdate">
+                            </mat-form-field></td>
+                        <td><mat-form-field class="example-full-width">
+                                <mat-label>End Date</mat-label>
+                                <input matInput ngModel name="enddate">
+                            </mat-form-field></td>
+
+                    </tr>
+
+                    <tr>
+                        <td><mat-form-field class="example-full-width">
+                                <mat-label>Capacity:</mat-label>
+                                <input matInput ngModel name="Capacity">
+                            </mat-form-field></td>
+                        <td><mat-form-field class="example-full-width">
+                                <mat-label>Description</mat-label>
+                                <input matInput ngModel name="Description">
+                            </mat-form-field></td>
+
+                    </tr>
+
+                </table>
+                <button class="new-Montserrat-Medium yes-btn" style="text-align: center;">Add Batch</button>
+                <h6 class="ta-c new-Montserrat-Medium fnt-15 new-0071BC pt-10">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores nostrum, quod facere hic
+                        perspiciatis omnis quaerat odit, harum expedita consectetur enim fugiat, itaque maxime at
+                        maiores
+                        libero tenetur necessitatibus eaque!</p>
+                </h6>
+            </form>
+        </div>
+    </div>
+</ng-container>
+
+<div class="main">
+    <div>
+        <h1>Batch Details </h1>
+    </div>
+
+
+
+
+
+
+
+    <section class="articles" >
+        <article>
+          <div class="article-wrapper">
+            <figure>
+              <img src="https://picsum.photos/id/1011/800/450" alt="" />
+            </figure>
+            <div class="article-body">
+              <h2>Dummy Data:</h2>
+              <a href="#" class="read-more">
+                Read more <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article>
+      
+          <div class="article-wrapper">
+            <figure>
+              <img src="https://picsum.photos/id/1005/800/450" alt="" />
+            </figure>
+            <div class="article-body">
+              <h2>Dummy Data:</h2>
+              <!-- <p>
+                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+              </p> -->
+              <a href="#" class="read-more">
+                Read more <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article>
+      
+          <div class="article-wrapper">
+            <figure>
+              <img src="https://picsum.photos/id/103/800/450" alt="" />
+            </figure>
+            <div class="article-body">
+              <h2>Dummy Data:</h2>
+              <p>
+                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+              </p>
+              <a href="#" class="read-more">
+                Read more <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article>
+            <div class="article-wrapper">
+              <figure>
+                <img src="https://picsum.photos/id/1011/800/450" alt="" />
+              </figure>
+              <div class="article-body">
+                <h2>Dummy Data:</h2>
+                
+                <a href="#" class="read-more">
+                  Read more <span class="sr-only">about this is some title</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+          
+          <div *ngFor="let user of users">
+            <article>
+                <div class="article-wrapper">
+                  <figure>
+                    <img src="https://picsum.photos/id/1011/800/450" alt="" />
+                  </figure>
+                  <div class="article-body">
+                    <h2>Dummy Data:</h2>
+                    <p>batchname: {{user.batchname}} <br></p>
+                    <p>trainername: {{user.trainername}} <br></p>
+                    <p>starttime: {{user.starttime}} <br></p>
+                    <p>endtime: {{user.endtime}} <br></p>
+                    <p>Capacity: {{user.Capacity}} <br></p>
+                    <p>Description: {{user.batchname}} <br></p>
+                    <a href="#" class="read-more">
+                      Read more <span class="sr-only">about this is some title</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+          </div>
+      </section>

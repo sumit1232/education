@@ -16,6 +16,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { AssetsComponent } from './assets/assets.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { HttpClientModule } from '@angular/common/http';
+
 // import {MatButtonModule} from '@angular/material/button';
 import {NgIf} from '@angular/common';
 import {FormsModule} from '@angular/forms';
@@ -43,6 +44,12 @@ import {MatRadioModule} from '@angular/material/radio';
 import { StaffComponent } from './staff/staff.component';
 import { FooterComponent } from './footer/footer.component';
 import { EnquryComponent } from './enqury/enqury.component';
+import { RegistrationdataComponent } from './registrationdata/registrationdata.component';
+import { AddtrainerComponent } from './addtrainer/addtrainer.component';
+import { TrainerdataComponent } from './trainerdata/trainerdata.component';
+import { BatchesComponent } from './batches/batches.component';
+
+// import {MatNativeDateModule } from '@angular/material';
 
 
 @NgModule({
@@ -60,7 +67,12 @@ import { EnquryComponent } from './enqury/enqury.component';
     DashboardComponent,
     StaffComponent,
     FooterComponent,
-    EnquryComponent
+    EnquryComponent,
+    RegistrationdataComponent,
+    AddtrainerComponent,
+    TrainerdataComponent,
+    BatchesComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -78,13 +90,15 @@ import { EnquryComponent } from './enqury/enqury.component';
     HttpClientModule,
     MatCardModule,
     MatDatepickerModule,
+    
     MatMenuModule,
     MatButtonToggleModule,
     MatExpansionModule,
     MatSidenavModule,
-    MatRadioModule
+    MatRadioModule,
   ],
   providers: [],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,26 @@
+<p>trainerdata works!</p>
+
+  <div class="main">
+    <div>
+        <h1>Register Trainer </h1>
+    </div>
+    
+    <!--cards -->
+    <div class="card" *ngFor="let user of users">
+            <div class="title">
+                <h1>Trainer Data : {{user.name}} </h1>
+            </div>
+            <div class="des">
+                <p >TrainerName: {{user.name}} <br></p>
+                <p>Trainernumber: {{user.contactnumber}}<br></p>
+                <p>Age: {{user.age}}<br></p>
+                <p>Gender: {{user.gender}}<br></p>
+                <p>Dateof Birth: {{user.dateofbirth}}<br></p>
+                <p>City: {{user.city}}<br></p>
+                <p>BloodGroup: {{user.bloodGroup}}<br></p>
+                <p>Batchtime: {{user.batchtime}}<br></p>
+                <p>Salary Ammount: {{user.salaryammount}}<br></p>
+                <p>PT charges: {{user.ptcharges}}<br></p>
+                
+    </div>
+    </div>

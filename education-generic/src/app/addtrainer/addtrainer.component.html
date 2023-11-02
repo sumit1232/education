@@ -1,0 +1,124 @@
+<h2>Create Profile for trainer</h2>
+<ng-container *ngIf="showcard">
+<div class="fyt-modal-design-branch animated slideInUp slow row" style="z-index: 3;">
+    <div class="col-md-12 fyt-display-flex">
+        <span class="sp">
+        </span>
+        <span class="new-Montserrat-Medium fyt-link-btn new-999999" (click)="closeDialog('cancel')"> <span
+                style="border-bottom: 1px solid #999999;">Close &nbsp;x</span>
+        </span>
+    </div>
+    <div class="col-md-12 ta-c" style="border-bottom: 1px solid #999999;">
+        <h3 class="ta-c new-Montserrat-Regular fnt-15 new-333333">Trainer Form Page</h3>
+        <span class="fnt-15 new-Montserrat-Regular new-808080 ta-c">Add Your Information</span>
+
+        <form #userForm="ngForm" (ngSubmit)="getUserData(userForm.value)">
+            <table class="example-full-width" cellspacing="0">
+                <tr>
+                    <td><mat-form-field class="example-full-width">
+                            <mat-label>Trainer name</mat-label>
+                            <input matInput ngModel name="name">
+                        </mat-form-field></td>
+                    <td><mat-form-field class="example-full-width">
+                            <mat-label>Contact Number:</mat-label>
+                            <input matInput ngModel name="contactnumber">
+                        </mat-form-field></td>
+                </tr>
+                <tr>
+                    <td><mat-form-field class="example-full-width">
+                            <mat-label>Age</mat-label>
+                            <input matInput ngModel name="age">
+                        </mat-form-field></td>
+                    <td><mat-form-field class="example-full-width">
+                            <mat-label>Gender</mat-label>
+                            <input matInput ngModel name="gender">
+                        </mat-form-field></td>
+
+
+                </tr>
+                <tr>
+                    <td><mat-form-field class="example-full-width">
+                            <mat-label>Date of birth:</mat-label>
+                            <input matInput ngModel name="dateofbirth">
+                        </mat-form-field></td>
+                    <td><mat-form-field class="example-full-width">
+                            <mat-label>City</mat-label>
+                            <input matInput ngModel name="city">
+                        </mat-form-field></td>
+
+                </tr>
+
+                <tr>
+                    <td><mat-form-field class="example-full-width">
+                            <mat-label>Blood Group:</mat-label>
+                            <input matInput ngModel name="bloodGroup">
+                        </mat-form-field></td>
+                    <td><mat-form-field class="example-full-width">
+                            <mat-label>Batch Time:</mat-label>
+                            <input matInput ngModel name="batchtime">
+                        </mat-form-field></td>
+
+                </tr>
+                <tr>
+                    <td><mat-form-field class="example-full-width">
+                            <mat-label>Salary Ammount:</mat-label>
+                            <input matInput ngModel name="salaryammount">
+                        </mat-form-field></td>
+
+                    <td><mat-form-field class="example-full-width">
+                            <mat-label>PT charges:</mat-label>
+                            <input matInput ngModel name="ptcharges">
+                        </mat-form-field></td>
+                </tr>
+            </table>
+            <button class="new-Montserrat-Medium yes-btn" style="text-align: center;">Add Data</button>
+            <h6 class="ta-c new-Montserrat-Medium fnt-15 new-0071BC pt-10">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores nostrum, quod facere hic
+                    perspiciatis omnis quaerat odit, harum expedita consectetur enim fugiat, itaque maxime at maiores
+                    libero tenetur necessitatibus eaque!</p>
+            </h6>
+        </form>
+    </div>
+</div>
+</ng-container>
+
+<button (click)="trainerform()">OpenForm</button>
+
+<div>
+    <!-- <button mat-raised-button color="primary" [routerLink]="['/trainerdata']">Trainer Data</button><br><br><br> -->
+    </div>
+
+    <!-- Sequence  -->
+ <section class="articles">
+
+
+    <div *ngFor="let user of users">
+        <article>
+            <div class="article-wrapper">
+                <figure>
+                    <img src="https://picsum.photos/id/1011/800/450" alt="" />
+                </figure>
+                <div class="article-body">
+                    <h4><b>John Doe</b></h4>
+                    <p>Architect & Engineer</p>
+                    <p>Name: {{user.name}} <br></p>
+                    <p>number: {{user.number}}<br></p>
+                    <p>email: {{user.email}}<br></p>
+                    <p>Age: {{user.age}}<br></p>
+                    <p>City: {{user.city}}<br></p>
+                    <p>Description: {{user.description}}<br></p>
+                    <a href="#" class="read-more">
+                        Read more <span class="sr-only">about this is some title</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</section>

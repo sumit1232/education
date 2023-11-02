@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background: #efefef;
+  }
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#05334a ;
+    padding: 1px 1%;
+  }
+  
+  
+  .logo{
+    inline-size: 160px;
+    margin-inline-end: 45px;
+    margin-block-start: 3px;
+  }
+  .nav-links{
+    flex: 1;
+    text-align: end;
+  }
+  
+  .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  .nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .nav-links ul li::after{
+    content: '';
+    inline-size: 0%;
+    block-size: 2px;
+    background: #e9024f;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .nav-links ul li:hover::after{
+    inline-size: 100%;
+  }
+  
+  
+  
+  .slide img{
+    width: 100%;
+  }
+  .arrow{
+    cursor: pointer;
+    position:absolute;
+    top: 45%;
+    color: black;
+    background-color: aliceblue;
+    padding: 8px 19px;
+    border-radius: 50%;
+    font-size: 25px;
+     font-weight: bold;
+  }
+  .next{
+    right: 10px ;
+  }
+  .prev{
+    left: 10px;
+  }
+  .caption{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 178px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.486);
+    padding: 10px 0px ;
+  }
+  .slide{
+    display: none;
+  }
+  
+  
+  
+  *{
+    margin: 0px;
+    padding: 0px;
+   }
+   body{
+    font-family: arial;
+   }
+   .main{
+   
+    margin: 2%;
+   }
+   
+  
+   .card{
+    width: 20%;
+    display: inline-block;
+    box-shadow: 2px 2px 20px black;
+    border-radius: 5px; 
+    margin: 2%;
+    background:#05334a ;
+   }
+  
+  .card:hover{
+    
+    transform: translate(3px);
+  
+  }   
+  .image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  
+  
+  
+  }
+  
+  .title{
+  color: white;
+  text-align: center;
+  padding: 5px;
+  
+  }
+  
+  h1{
+  font-size: 20px;
+  }
+  
+  
+  .des{
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  text-align: left;
+  
+  padding-top: 10px;
+       border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  }
+  
+  
+  button{
+  margin-top: 14px;
+  margin-bottom: 14px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding:10px 25px;
+  }
+  button:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+  }
+  
+  .abouth1{
+  text-align: center;
+  margin-top: 30px;
+  }
+  
+  .margin-t-20 {
+    margin-top: 20px;
+    margin: 20px;
+  }
+  
+  
